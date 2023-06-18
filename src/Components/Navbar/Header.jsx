@@ -76,7 +76,7 @@ function Header() {
             </Link>
           </li>
           <div className="py-5">
-            <a href={Login}>
+            <a href="/login">
               <button className="border-2 border-white text-white rounded-full px-6 inline-block font-semibold hover:bg-white hover:text-gray-900">
                 Sign In
               </button>
