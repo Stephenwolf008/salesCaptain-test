@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import NavLinks from "./NavLinks";
 import { Link } from "react-router-dom";
-import Login from "../../Pages/Login";
+
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -55,9 +55,10 @@ function Header() {
         {/* Mobile Nav  */}
         <ul
           className={`
-            md:hidden fixed w-full top-0 bottom-0 py-24 pl-4 duration-500 
+            md:hidden fixed w-full top-0 bottom-0 py-24 pl-4 duration-500 z-30
             ${open ? "left-0 bg-gray-900" : "left-[-100%] bg-white"}
           `}
+          style={{ overflowY: "auto" }}
         >
           <NavLinks />
           <li>
