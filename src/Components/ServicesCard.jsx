@@ -56,10 +56,10 @@ function ServicesCard() {
             </a>
           </div>
           <div className="p-6 bg-gray-800 border-gray-700 w-full">
-            <h5 className="mb-3 text-base font-semibold text-gray-900 md:text-xl dark:text-white">
+            <h5 className="mb-3 text-base font-semibold md:text-xl text-white">
             SalesCaptain is designed for your business
             </h5>
-            <p className="text-sm font-normal text-gray-500 dark:text-gray-400">
+            <p className="text-sm font-normal text-gray-500">
             Select your industry to see how it works.
             </p>
             <ul className="my-4 space-y-3">
@@ -67,7 +67,7 @@ function ServicesCard() {
                 <li key={index}>
                 <a
                     href="/"
-                    className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                    className="flex items-center p-3 text-base font-bold rounded-lg group hover:shadow bg-gray-600 hover:bg-gray-500 text-white"
                 >
                     <span className="flex-1 ml-3 whitespace-nowrap">
                     {industry}
@@ -80,7 +80,7 @@ function ServicesCard() {
             <div className="flex justify-center mt-4">
                 <button
                 id="showMoreBtn"
-                className="text-gray-900 bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white px-4 py-2 rounded-lg text-sm font-medium"
+                className="group hover:shadow bg-gray-600 hover:bg-gray-500 text-white px-4 py-2 rounded-lg text-sm font-medium"
                 onClick={toggleShowMore}
                 >
                 {showMore ? 'Show Less' : 'Show More'}
