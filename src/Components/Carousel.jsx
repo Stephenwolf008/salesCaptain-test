@@ -35,7 +35,7 @@ const Carousel = ({ images }) => {
         <FiArrowLeft />
       </button>
       <img
-        className="px-12 py-12 shadow-2xl rounded-full"
+        className="px-12 py-12 shadow-2xl"
         src={images[currentImageIndex]}
         alt="Carousel"
       />

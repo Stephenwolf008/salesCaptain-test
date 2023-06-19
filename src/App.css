@@ -1,9 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 #root{
-    background-color: black;
+    background-color: white;
 }
 
 #main-bg {
@@ -12,13 +8,6 @@
     background-position: center;
 }
 
-.App {
-    background-size: cover;
-    background-position: center;
-}
-
 .title {
-    font-weight: 700;
-    filter: drop-shadow(0 0 20px white);
-    -webkit-filter: drop-shadow(0 0 20px white);
+    font-weight: 700; 
 }

@@ -10,25 +10,19 @@ function Footer() {
 
   return (
     <footer className="bg-gray-900 text-white">
-      <div className="md:flex md:justify-between md:items-center sm:px-12 px-4 bg-[#ffffff19] py-7 border-1 shadow-2xl border-black"
+      <div className="md:flex md:justify-between md:items-center sm:px-12 px-4 bg-white py-7 border-1 shadow-2xl border-black"
         onMouseEnter={() => setShowLine(true)}
         onMouseLeave={() => setShowLine(false)}>
       {showLine && (
           <h1 className="lg:text-4xl text-3xl md:mb-0 mb-6 lg:leading-normal font-semibold md:w-2/5">
-            <span
-              className="text-white"
-              style={{ fontWeight: 600 }}
-            >
+            <span className="text-black font-[Poppins] font-semibold">
               See why 100,000+ businesses trust us. Book a personalized demo to see how SalesCaptain provides you the right tools to grow your business.
             </span>
           </h1>
         )}
         {!showLine && (
           <h1 className="lg:text-4xl text-3xl md:mb-0 mb-6 lg:leading-normal font-semibold md:w-2/5">
-            <span
-              className="text-white font-Serif"
-              style={{ fontWeight: 600, }}
-            >
+            <span className="text-black font-[Poppins] font-semibold">
               Ready To Grow?
             </span>
           </h1>
@@ -37,15 +31,15 @@ function Footer() {
           <input
             type="email"
             placeholder="Enter Your E-mail"
-            className="text-gray-800 sm:w-72 w-full sm:mr-5 mr-1 lg:mb-0 mb-4 py-2.5 rounded px-2 focus:outline-none"
+            className="text-gray-900 sm:w-72 w-full sm:mr-5 mr-1 lg:mb-0 mb-4 py-2.5 rounded px-2 border-black border-2"
           />
-          <button className="bg-blue-500 hover:bg-blue-700 duration-300 px-5 py-2.5 font-[Poppins] rounded-md text-white md:w-auto w-full">
+          <button className="bg-blue-400 hover:bg-black hover:text-white duration-300 px-10 lg:px-5 py-2.5 font-[Poppins] rounded-md text-white lg:w-auto md:w-full">
             Get Demo
           </button>
         </div>
         <div>
             <img src="https://assets.website-files.com/62a83ee090ccdee139c347e5/62af532e37289b6270d7aba8_stars.webp" loading="lazy" width="229" alt="" />
-            <div className="text-center text-1xl">500+ Reviews</div>
+            <div className="lg:text-center text-1xl text-black ">500+ Reviews</div>
         </div>
       </div>
 

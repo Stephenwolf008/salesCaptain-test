@@ -2,35 +2,31 @@ import "../App.css";
 
 function HeroSection() {
   return (
-    <div
-      className="App flex justify-center items-center bg-cover bg-center bg-no-repeat mb-2 mt-2 border rounded"
-      style={{
-        backgroundImage:
-          'url("https://assets.website-files.com/62a83ee090ccdee139c347e5/62b0e6fa4473cb712ba3b454_home-hero-agnostic-l-2x.webp")',
-      }}
-    >
+    <div className="flex flex-col justify-center items-center bg-slate-100">
       {/* Hero Section */}
-      <div className="heroSection sm:w-full md:w-6/12 h-full flex flex-col items-center justify-center text-center text-white">
-        <div className="bg-gray-800 border-1 border-black mb-1 mt-2 shadow-2xl rounded-md relative z-10 transition-all duration-500 hover:bg-transparent">
-            <h1 className="text-8xl title">
+      <div className="heroSection sm:w-full md:w-10/12 h-full flex flex-col md:flex-row items-center justify-center text-center text-black">
+        <div className="bg-slate-100 mt-2 relative z-10 w-full md:w-1/2">
+            <h1 className="text-8xl title font-[Playfair]">
                 Best way to grow <br />
                 your local business
             </h1>
-            <p className="py-10">
+            <p className="py-10 text-2xl font-[Poppins]">
                 Artificial Intelligence powered easy-to-use tools to get more customers & give them a better experience
             </p>
         </div>
-        <div className="flex justify-center mb-2 mt-2 relative z-20">
-          <input
-            type="email"
-            placeholder="Enter Your E-mail"
-            className="text-gray-800 sm:w-72 w-full sm:mr-5 mr-1 lg:mb-0 mb-4 py-2.5 rounded px-4 focus:outline-none"
-          />
-          <button className="bg-blue-500 hover:bg-blue-700 duration-300 px-7 py-3 font-[Poppins] rounded-md text-white md:w-auto w-full">
-            Get Demo
-          </button>
+        <div className="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 md:w-1/2">
+            <form className="space-y-6" action="#">
+                <div>
+                    <input type="text" name="text" className="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  text-black" placeholder="Your Name" />
+                </div>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Enter your E-mail" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"/>
+                </div>
+                <button type="submit" className="w-full text-black bg-blue-600 hover:bg-blue-800 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-large rounded-lg text-md px-5 py-2.5 text-center font-[Poppins]">Get Demo</button>
+            </form>
         </div>
       </div>
+      <img src="https://assets.website-files.com/62a83ee090ccdee139c347e5/62b0e6fa4473cb712ba3b454_home-hero-agnostic-l-2x.webp" alt="img"/>
     </div>
   );
 }

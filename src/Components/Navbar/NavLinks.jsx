@@ -11,42 +11,43 @@ function NavLinks() {
       {links.map((link) => (
         <div key={link.name}>
           <div className="px-2 text-left md:cursor-pointer group">
-            <h1
-              className="py-6 flex justify-between items-center md:pr-0 pr-5 group font-semibold text-base md:text-lg hover:text-blue-500"
+            <div
+              className="md:py-4 py-6 flex justify-between items-center md:pr-0 pr-5 group font-semibold hover:text-blue-500"
               onClick={() => {
                 heading !== link.name ? setHeading(link.name) : setHeading("");
                 setSubHeading("");
               }}
             >
               {link.name}
-              <span className="text-xl md:hidden inline">
+              <span className="md:hidden">
                 <ion-icon
                   name={`${
                     heading === link.name ? "chevron-up" : "chevron-down"
                   }`}
                 ></ion-icon>
               </span>
-              <span className="text-xl md:mt-1 md:ml-2 md:block hidden group-hover:rotate-180 group-hover:-mt-2">
+              {/* <span className="md:mt-1 md:ml-2 md:block hidden group-hover:rotate-180">
                 <ion-icon name="chevron-down"></ion-icon>
-              </span>
-            </h1>
+              </span> */}
+            </div>
             {link.submenu && (
               <div>
-                <div className="absolute top-20 hidden group-hover:md:block hover:md:block z-30">
-                  <div className="py-3">
+                <div className="absolute top-16 right-20 hidden group-hover:md:block hover:md:block z-30">
+                  {/* <div className="py-3">
                     <div className="w-4 h-4 left-3 absolute mt-1 bg-white rotate-45"></div>
-                  </div>
-                  <div className="bg-white p-5 grid grid-cols-3 gap-10 border-2 border-black rounded-2xl shadow-2xl">
+                    <div className="w-4 h-4 right-3 absolute mt-1 bg-white rotate-45"></div>
+                  </div> */}
+                  <div className="bg-white p-10 grid grid-cols-3 gap-10 border-1 rounded-2xl shadow-2xl">
                     {link.sublinks.map((mysublinks) => (
                       <div key={mysublinks.Head}>
-                        <h1 className="text-lg font-semibold mb-2 text-black">
+                        <h1 className="text-lg font-semibold mb-2 text-black underline font-serif">
                           {mysublinks.Head}
                         </h1>
                         {mysublinks.sublink.map((slink) => (
                           <li key={slink.name} style={{ listStyleType: "disc" }} className="my-2.5">
                             <Link
                               to={slink.link}
-                              className="hover:text-blue-500 text-base text-black underline hover:no-underline"
+                              className="hover:text-blue-500 text-base text-black font-sans"
                             >
                               {slink.name}
                             </Link>
