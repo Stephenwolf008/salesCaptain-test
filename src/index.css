@@ -10,5 +10,4 @@ body,
 .app {
   height: 100%;
   background-color: white;
-  @apply text-black;
 }

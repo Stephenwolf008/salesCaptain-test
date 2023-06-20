@@ -18,7 +18,7 @@ function Home() {
   ];
 
   return (
-    <div className='bg-white font-mono'>
+    <div className='bg-white'>
         <Header />
         <HeroSection />
         <div className="sm:justify-center flex flex-col items-center bg-white p-4 px-5 py-20 ">

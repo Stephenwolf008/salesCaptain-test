@@ -4,6 +4,7 @@ import SocialIcons from "./SocialIcons";
 import { Icons } from "./Menus";
 import "../../App.css";
 
+
 function Footer() {
 
   const [showLine, setShowLine] = useState(false);
@@ -51,21 +52,23 @@ function Footer() {
 
       <div className="bg-white pt-2 text-black text-sm pb-4">
         <div className="flex flex-wrap justify-center">
-          <span className="mr-2">
+          <span className="mr-2 text-center">
             &copy; SalesCaptain Inc 2023 (A division of SalesBook Technologies Pvt Ltd)
           </span>
-          <a href="/" className="mr-2 text-gray-500 hover:text-gray-700">
-            Terms and Conditions
-          </a>
-          <a href="/" className="mr-2 text-gray-500 hover:text-gray-700">
-            Privacy
-          </a>
-          <a href="/" className="mr-2 text-gray-500 hover:text-gray-700">
-            Refund Policy
-          </a>
-          <a href="/" className="text-gray-500 hover:text-gray-700">
-            CCPA
-          </a>
+          <div>
+            <a href="/" className="mr-2 text-gray-500 hover:text-gray-700">
+              Terms and Conditions
+            </a>
+            <a href="/" className="mr-2 text-gray-500 hover:text-gray-700">
+              Privacy
+            </a>
+            <a href="/" className="mr-2 text-gray-500 hover:text-gray-700">
+              Refund Policy
+            </a>
+            <a href="/" className="text-gray-500 hover:text-gray-700">
+              CCPA
+            </a>
+          </div>
         </div>
       </div>
     </footer>

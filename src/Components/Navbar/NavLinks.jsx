@@ -40,14 +40,14 @@ function NavLinks() {
                   <div className="bg-white p-10 grid grid-cols-3 gap-10 border-1 rounded-2xl shadow-2xl">
                     {link.sublinks.map((mysublinks) => (
                       <div key={mysublinks.Head}>
-                        <h1 className="text-lg font-semibold mb-2 text-black underline font-serif">
+                        <h1 className="text-lg font-semibold mb-2 text-black underline font-[Lora]">
                           {mysublinks.Head}
                         </h1>
                         {mysublinks.sublink.map((slink) => (
                           <li key={slink.name} style={{ listStyleType: "disc" }} className="my-2.5">
                             <Link
                               to={slink.link}
-                              className="hover:text-blue-500 text-base text-black font-sans"
+                              className="hover:text-blue-500 text-base text-black font-[Lora]"
                             >
                               {slink.name}
                             </Link>

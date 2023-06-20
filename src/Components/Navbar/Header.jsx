@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import NavLinks from "./NavLinks";
 import { Link } from "react-router-dom";
 
-
 function Header() {
 
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="bg-white text-black shadow font-sans">
+    <nav className="bg-white text-black shadow font-[Lora]">
       <div className="flex items-center justify-between">
         <div className="z-50 p-2 md:w-auto w-full flex justify-between">
           <img

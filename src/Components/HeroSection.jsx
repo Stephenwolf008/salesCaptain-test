@@ -5,12 +5,12 @@ function HeroSection() {
     <div className="flex flex-col justify-center items-center bg-slate-100">
       {/* Hero Section */}
       <div className="heroSection sm:w-full md:w-10/12 h-full flex flex-col md:flex-row items-center justify-center text-center text-black">
-        <div className="bg-slate-100 mt-2 relative z-10 w-full md:w-1/2">
-            <h1 className="text-8xl title font-[Playfair]">
+        <div className="bg-slate-100 mt-2 relative z-10 w-1/2 lg:w-1/2">
+            <h1 className="text-6xl lg:text-8xl title font-serif">
                 Best way to grow <br />
                 your local business
             </h1>
-            <p className="py-10 text-2xl font-[Poppins]">
+            <p className="py-10 text-2xl font-[cursive]">
                 Artificial Intelligence powered easy-to-use tools to get more customers & give them a better experience
             </p>
         </div>

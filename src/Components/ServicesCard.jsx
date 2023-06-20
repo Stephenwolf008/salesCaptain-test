@@ -24,8 +24,8 @@ function ServicesCard() {
     };
 
     return(
-        <div className="w-full flex flex-col items-center justify-center">
-          <div className="grid grid-cols-2 gap-4 p-5 mb-2">
+        <div className="w-full flex flex-col items-center justify-center font-sans">
+          <div className="md:grid md:grid-cols-2 gap-4 p-5 mb-2">
             <a href="/" className="m-2 flex flex-col items-center border rounded-lg shadow md:flex-row md:max-w-xl hover:bg-slate-100 border-gray-300 bg-slate-200">
                 <img className="m-2 object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="https://assets.website-files.com/62a83ee090ccdee139c347e5/62defe250a42e4ba76b2ab04_Mask%20Group%20166.webp" alt="" />
                 <div class="flex flex-col justify-between p-4 leading-normal">
@@ -55,7 +55,7 @@ function ServicesCard() {
                 </div>
             </a>
           </div>
-          <div className="p-6 bg-gray-800 border-gray-700 w-full">
+          <div className="p-6 bg-gray-800 border-gray-700 w-full font-[Poppins]">
             <h5 className="mb-3 text-base font-semibold md:text-xl text-white">
             SalesCaptain is designed for your business
             </h5>
