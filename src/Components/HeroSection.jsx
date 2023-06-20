@@ -6,7 +6,7 @@ function HeroSection() {
       {/* Hero Section */}
       <div className="heroSection sm:w-full md:w-10/12 h-full flex flex-col md:flex-row items-center justify-center text-center text-black">
         <div className="bg-slate-100 mt-2 relative z-10 w-1/2 lg:w-1/2">
-            <h1 className="text-6xl lg:text-8xl title font-serif">
+            <h1 className="text-5xl lg:text-8xl title font-serif">
                 Best way to grow <br />
                 your local business
             </h1>
