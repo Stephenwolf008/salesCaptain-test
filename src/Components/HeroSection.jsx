@@ -10,7 +10,7 @@ function HeroSection() {
                 Best way to grow <br />
                 your local business
             </h1>
-            <p className="py-10 text-2xl font-[cursive]">
+            <p className="py-10 text-2xl font-[Lora]">
                 Artificial Intelligence powered easy-to-use tools to get more customers & give them a better experience
             </p>
         </div>
