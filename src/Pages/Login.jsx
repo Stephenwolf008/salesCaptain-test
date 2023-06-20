@@ -13,7 +13,7 @@ function Login() {
               <a href=" #">
                 <img src="https://app.salescaptain.com/static/media/loginLogo.3814067f45867b0a416c.png" alt="logo" className="w-40 mx-auto" />
               </a>
-              <div className="py-10">
+              <div className="md:py-10 py-5">
                 <div className="font-bold text-blue-700 mb-2 text-center">
                   <h1 className="text-3xl">Sign in to Account</h1>
                   <div className="border-2 w-10 border-blue-700 inline-block"></div>
@@ -31,22 +31,22 @@ function Login() {
                 </div>
                 <p className="text-gray-400 my-3 text-center">or use your email account</p>
                 <div className="flex flex-col items-center">
-                  <div className="bg-gray-100 w-64 p-2 flex items-center mb-3">
-                    <FaRegEnvelope className="text-gray-400 m-2" />
+                  <div className="bg-gray-100 w-48 md:w-64 p-2 flex items-center mb-3">
+                    <FaRegEnvelope className="text-gray-400 md:m-2 mr-1" />
                     <input type="email" name="email" placeholder="email" className="bg-gray-100 outline-none text-sm flex-1" />
                   </div>
-                  <div className="bg-gray-100 w-64 p-2 flex items-center mb-3">
-                    <MdLockOutline className="text-gray-400 m-2" />
+                  <div className="bg-gray-100 w-48 md:w-64 p-2 flex items-center mb-3">
+                    <MdLockOutline className="text-gray-400 md:m-2 mr-1" />
                     <input type="password" name="password" placeholder="password" className="bg-gray-100 outline-none text-sm flex-1" />
                   </div>
-                  <div className="flex justify-between w-64 mb-5">
+                  <div className="flex justify-between w-44 md:w-64 md:mb-5">
                     <label className="flex items-center text-xs">
                       <input type="checkbox" name="remember" className="mr-1" />
                       Remember Me
                     </label>
                     <a href=" #" target="_blank" className="text-xs hover:text-blue-700">Forgot Password?</a>
                   </div>
-                  <a href=" #" className="border-2 border-blue-700 text-blue-700 rounded-full px-12 py-2 inline-block font-semibold hover:bg-blue-700 hover:text-white">
+                  <a href=" #" className="mt-2 md:mt-0 border-2 border-blue-700 text-blue-700 rounded-full px-12 py-2 inline-block font-semibold hover:bg-blue-700 hover:text-white">
                     Sign In
                   </a>
                 </div>
