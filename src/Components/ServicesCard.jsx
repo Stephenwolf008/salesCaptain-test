@@ -55,11 +55,12 @@ function ServicesCard() {
                 </div>
             </a>
           </div>
-          <div className="p-6 bg-gray-800 border-gray-700 w-full font-[Poppins]">
-            <h5 className="mb-3 text-base font-semibold md:text-xl text-white">
+          <img src="https://assets.website-files.com/62a83ee090ccdee139c347e5/62b0e6fa4473cb712ba3b454_home-hero-agnostic-l-2x.webp" alt="img"/>
+          <div className="p-6 bg-white w-full font-[Poppins]">
+            <h5 className="mb-3 text-base font-semibold md:text-xl text-black">
             SalesCaptain is designed for your business
             </h5>
-            <p className="text-sm font-normal text-gray-500">
+            <p className="text-sm font-normal text-black">
             Select your industry to see how it works.
             </p>
             <ul className="my-4 space-y-3">
@@ -67,7 +68,7 @@ function ServicesCard() {
                 <li key={index}>
                 <a
                     href="/"
-                    className="flex items-center p-3 text-base font-bold rounded-lg group hover:shadow bg-gray-600 hover:bg-gray-500 text-white"
+                    className="flex items-center p-3 text-base font-bold rounded-lg group hover:shadow bg-blue-400 hover:bg-black hover:text-white text-white"
                 >
                     <span className="flex-1 ml-3 whitespace-nowrap">
                     {industry}
@@ -80,7 +81,7 @@ function ServicesCard() {
             <div className="flex justify-center mt-4">
                 <button
                 id="showMoreBtn"
-                className="group hover:shadow bg-gray-600 hover:bg-gray-500 text-white px-4 py-2 rounded-lg text-sm font-medium"
+                className="group hover:shadow bg-black hover:bg-blue-500 text-white px-4 py-2 rounded-lg text-sm font-medium"
                 onClick={toggleShowMore}
                 >
                 {showMore ? 'Show Less' : 'Show More'}

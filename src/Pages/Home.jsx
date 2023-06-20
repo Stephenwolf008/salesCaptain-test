@@ -22,7 +22,7 @@ function Home() {
         <Header />
         <HeroSection />
         <div className="sm:justify-center flex flex-col items-center bg-white p-4 px-5 py-20 ">
-            <h1 className="text-5xl font-bold p-4 inline-block font-[cursive]">
+            <h1 className="text-5xl font-bold p-4 inline-block font-[cursive] justify-center text-center">
                 Trusted by 100,000+ local businesses globally
             </h1>
             <Carousel images={images} />

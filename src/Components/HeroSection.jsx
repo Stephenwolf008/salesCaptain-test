@@ -1,5 +1,6 @@
 import "../App.css";
 
+
 function HeroSection() {
   return (
     <div className="flex flex-col justify-center items-center bg-slate-100">
@@ -26,7 +27,6 @@ function HeroSection() {
             </form>
         </div>
       </div>
-      <img src="https://assets.website-files.com/62a83ee090ccdee139c347e5/62b0e6fa4473cb712ba3b454_home-hero-agnostic-l-2x.webp" alt="img"/>
     </div>
   );
 }
